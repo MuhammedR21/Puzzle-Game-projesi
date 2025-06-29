@@ -1,53 +1,76 @@
-Puzzle Drag & Drop Oyunu
-Bu proje, kullanıcıların parçaları doğru yerlere sürükleyerek bir bulmacayı çözmesini sağlayan basit bir HTML, CSS ve JavaScript tabanlı oyun uygulamasıdır. Oyun, doğru ve yanlış hamleleri sayarak oyuncuya sonuç bildirimi verir.
+Puzzle Game
+Bu proje, bir görseli parçalara ayırarak kullanıcıya sunduğu parçaları doğru yerlere sürükleyip bırakma (drag and drop) mantığıyla oynanabilen bir interaktif puzzle oyunudur. Oyun, HTML, CSS ve JavaScript ile geliştirilmiş olup, hem masaüstü hem mobil cihazlarla uyumlu olacak şekilde responsive tasarlanmıştır.
 
-Proje Yapısı
-css
-Kopyala
-Düzenle
-game/
- index.html
- style.css
- script.js
- js/
-dragDrop.js
-elements.js
-positionElements.js
-images/
-     img-1.jpg
-     img-2.jpg
-     ...
+ Projenin Amacı
+Bu projenin temel amacı, kullanıcıların dikkat ve görsel hafıza becerilerini geliştirebilecekleri bir oyun ortamı sağlamaktır. Özellikle HTML5 ve JavaScript'in etkileşimli yapısı kullanılarak sürükle bırak (drag & drop) mekanizması üzerinden keyifli bir deneyim sunulması hedeflenmiştir.
+
+ Temel Özellikler
+ 5x4 grid yapısında puzzle alanı
+ Sürükle & bırak (drag and drop) etkileşimi
+ Doğru yerleştirme kontrolü ve başarılı çözümde modal popup bildirimi
+ Oyun sonunda yapılan deneme sayısını gösterme
+ Responsive ve kullanıcı dostu arayüz
+ Yükleme ekranı (loader) ile başlangıç animasyonu
+ Kendi görselini yükleyerek puzzle oluşturabilme (opsiyonel)
+
+| Teknoloji            | Açıklama                                                                                     |
+| -------------------- | -------------------------------------------------------------------------------------------- |
+| HTML            | Sayfa yapısı ve içerik oluşturma                                                             |
+| CSS             | Stil ve düzen (Grid, Flexbox, Animasyonlar)                                                  |
+| JavaScript  | Dinamik içerik ve oyun mantığı                                                               |
+| Modüler JS       | `app.js`, `drag.js`, `drop.js`, `helper.js`, `loader.js` dosyalarına ayrılmış mantıksal yapı |
 
 
-Nasıl Çalıştırılır?
-Projeyi indirin veya ZIP dosyasını çıkarın:
-index.html dosyasını bir web tarayıcısında açın:
+ puzzle-game/
+│
+├──  css/
+│   └── style.css               → Tüm stil dosyaları burada
+│
+├──  js/
+│   ├── app.js                  → Ana oyun motoru
+│   ├── drag.js                 → Sürükleme işlemleri
+│   ├── drop.js                 → Bırakma işlemleri
+│   ├── helper.js               → Yardımcı işlevler
+│   └── loader.js               → Yükleme animasyonu kontrolü
+│
+├──  images/
+│   └── img-1.jpg               → Oyun başlangıç görseli
+│
+├── index.html                  → Ana HTML sayfası
+└── README.md                   → Proje açıklama dosyası
 
-Windows: index.html dosyasına çift tıklayın.
 
-VS Code kullanıyorsanız "Live Server" eklentisi ile çalıştırabilirsiniz.
+Geliştirme Süreci
+Bu proje geliştirilirken:
 
-Oyunu oynayın: Parçaları doğru yerlere sürükleyerek yerleştirin.
+HTML ve CSS ile responsive ve modern bir arayüz tasarlandı.
 
-Oyun Mantığı
-Kullanıcı, resim parçalarını doğru kutulara sürüklemelidir.
+JavaScript kullanılarak sürükle-bırak mekanizması sıfırdan inşa edildi.
 
-Her doğru yerleştirme puan kazandırır.
+Oyun mantığı için konum karşılaştırma, deneme sayısı, başarı kontrolü gibi işlevler geliştirildi.
 
-Tüm parçalar doğru yerleştirildiğinde bir modal pencere ile başarı mesajı gösterilir.
+Kod yapısı, modüler ve okunabilir olacak şekilde organize edildi.
 
-Toplam yanlış hamle sayısı da gösterilir.
+Geliştiricinin isteğine göre farklı görsellerle kolayca yeniden oynanabilir hale getirildi.
 
- Kullanılan Teknolojiler
-HTML – Yapı
 
-CSS – Stil
+Öğrenilenler & Kazanımlar
+Bu proje sayesinde:
 
-JavaScript (ES6 Modules) – Oyun mantığı ve sürükle bırak işlevselliği
+dragstart, dragover, drop gibi olay dinleyicilerinin nasıl çalıştığı öğrenildi.
 
- Notlar
-dragDrop.js, sürükle-bırak olaylarını ve oyun akışını kontrol eder.
+CSS Grid ve Flexbox kullanılarak düzenli ve esnek arayüzler tasarlandı.
 
-elements.js, DOM elementlerini merkezi olarak yönetir.
+DOM üzerinde dinamik manipülasyon teknikleri geliştirildi.
 
-positionElements.js, oyun ızgarasını ve yerleştirme alanlarını düzenler.
+Proje modülerliği ve yeniden kullanılabilir kod yapıları hakkında bilgi sahibi olundu.
+
+
+Bilinen Eksikler ve Geliştirme Fikirleri
+Kullanıcının kendi görselini yükleyerek puzzle oluşturması (kısmen entegre, geliştirilebilir)
+
+Zorluk seviyesi (farklı grid boyutları) eklenmesi
+
+Parçaların rastgele karıştırılma mantığının daha sofistike hale getirilmesi
+
+Skor sistemi ve zamanlayıcı gibi özelliklerin eklenmesi
