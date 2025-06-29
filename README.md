@@ -1,53 +1,53 @@
 Puzzle Drag & Drop Oyunu
-Bu proje, kullanıcıların parçaları doğru yerlere sürükleyerek bir bulmacayı çözmesini sağlayan basit bir HTML, CSS ve JavaScript tabanlı oyun uygulamasıdır. Oyun, doğru ve yanlış hamleleri sayarak oyuncuya sonuç bildirimi verir.
+Bu proje, kullanÄ±cÄ±larÄ±n parÃ§alarÄ± doÄŸru yerlere sÃ¼rÃ¼kleyerek bir bulmacayÄ± Ã§Ã¶zmesini saÄŸlayan basit bir HTML, CSS ve JavaScript tabanlÄ± oyun uygulamasÄ±dÄ±r. Oyun, doÄŸru ve yanlÄ±ÅŸ hamleleri sayarak oyuncuya sonuÃ§ bildirimi verir.
 
-Proje Yapısı
+Proje YapÄ±sÄ±
 css
 Kopyala
-Düzenle
+DÃ¼zenle
 game/
-??? index.html
-??? style.css
-??? script.js
-??? js/
-?   ??? dragDrop.js
-?   ??? elements.js
-?   ??? positionElements.js
-??? images/
-    ??? img-1.jpg
-    ??? img-2.jpg
-    ??? ...
+ index.html
+ style.css
+ script.js
+ js/
+dragDrop.js
+elements.js
+positionElements.js
+images/
+     img-1.jpg
+     img-2.jpg
+     ...
 
 
-Nasıl Çalıştırılır?
-Projeyi indirin veya ZIP dosyasını çıkarın:
-index.html dosyasını bir web tarayıcısında açın:
+NasÄ±l Ã‡alÄ±ÅŸtÄ±rÄ±lÄ±r?
+Projeyi indirin veya ZIP dosyasÄ±nÄ± Ã§Ä±karÄ±n:
+index.html dosyasÄ±nÄ± bir web tarayÄ±cÄ±sÄ±nda aÃ§Ä±n:
 
-Windows: index.html dosyasına çift tıklayın.
+Windows: index.html dosyasÄ±na Ã§ift tÄ±klayÄ±n.
 
-VS Code kullanıyorsanız "Live Server" eklentisi ile çalıştırabilirsiniz.
+VS Code kullanÄ±yorsanÄ±z "Live Server" eklentisi ile Ã§alÄ±ÅŸtÄ±rabilirsiniz.
 
-Oyunu oynayın: Parçaları doğru yerlere sürükleyerek yerleştirin.
+Oyunu oynayÄ±n: ParÃ§alarÄ± doÄŸru yerlere sÃ¼rÃ¼kleyerek yerleÅŸtirin.
 
-Oyun Mantığı
-Kullanıcı, resim parçalarını doğru kutulara sürüklemelidir.
+Oyun MantÄ±ÄŸÄ±
+KullanÄ±cÄ±, resim parÃ§alarÄ±nÄ± doÄŸru kutulara sÃ¼rÃ¼klemelidir.
 
-Her doğru yerleştirme puan kazandırır.
+Her doÄŸru yerleÅŸtirme puan kazandÄ±rÄ±r.
 
-Tüm parçalar doğru yerleştirildiğinde bir modal pencere ile başarı mesajı gösterilir.
+TÃ¼m parÃ§alar doÄŸru yerleÅŸtirildiÄŸinde bir modal pencere ile baÅŸarÄ± mesajÄ± gÃ¶sterilir.
 
-Toplam yanlış hamle sayısı da gösterilir.
+Toplam yanlÄ±ÅŸ hamle sayÄ±sÄ± da gÃ¶sterilir.
 
- Kullanılan Teknolojiler
-HTML – Yapı
+ KullanÄ±lan Teknolojiler
+HTML â€“ YapÄ±
 
-CSS – Stil
+CSS â€“ Stil
 
-JavaScript (ES6 Modules) – Oyun mantığı ve sürükle bırak işlevselliği
+JavaScript (ES6 Modules) â€“ Oyun mantÄ±ÄŸÄ± ve sÃ¼rÃ¼kle bÄ±rak iÅŸlevselliÄŸi
 
  Notlar
-dragDrop.js, sürükle-bırak olaylarını ve oyun akışını kontrol eder.
+dragDrop.js, sÃ¼rÃ¼kle-bÄ±rak olaylarÄ±nÄ± ve oyun akÄ±ÅŸÄ±nÄ± kontrol eder.
 
-elements.js, DOM elementlerini merkezi olarak yönetir.
+elements.js, DOM elementlerini merkezi olarak yÃ¶netir.
 
-positionElements.js, oyun ızgarasını ve yerleştirme alanlarını düzenler.
+positionElements.js, oyun Ä±zgarasÄ±nÄ± ve yerleÅŸtirme alanlarÄ±nÄ± dÃ¼zenler.
