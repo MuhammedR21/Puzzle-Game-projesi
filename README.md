@@ -21,23 +21,20 @@ Bu projenin temel amacı, kullanıcıların dikkat ve görsel hafıza becerileri
 | Modüler JS       | `app.js`, `drag.js`, `drop.js`, `helper.js`, `loader.js` dosyalarına ayrılmış mantıksal yapı |
 
 
- puzzle-game/
-│
-├──  css/
-│   └── style.css               → Tüm stil dosyaları burada
-│
-├──  js/
-│   ├── app.js                  → Ana oyun motoru
-│   ├── drag.js                 → Sürükleme işlemleri
-│   ├── drop.js                 → Bırakma işlemleri
-│   ├── helper.js               → Yardımcı işlevler
-│   └── loader.js               → Yükleme animasyonu kontrolü
-│
-├──  images/
-│   └── img-1.jpg               → Oyun başlangıç görseli
-│
-├── index.html                  → Ana HTML sayfası
-└── README.md                   → Proje açıklama dosyası
+ puzzle-game
+ css
+style.css               → Tüm stil dosyaları burada
+
+ js
+app.js                  → Ana oyun motoru
+drag.js                 → Sürükleme işlemleri
+drop.js                 → Bırakma işlemleri
+helper.js               → Yardımcı işlevler
+loader.js               → Yükleme animasyonu kontrolü
+images/
+img-1.jpg               → Oyun başlangıç görseli
+index.html                  → Ana HTML sayfası
+README.md                   → Proje açıklama dosyası
 
 
 Geliştirme Süreci
